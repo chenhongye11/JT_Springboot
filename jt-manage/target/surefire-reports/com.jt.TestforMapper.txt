@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.jt.TestforMapper
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.498 s <<< FAILURE! - in com.jt.TestforMapper
+TestforItemMapper(com.jt.TestforMapper)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'fileController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.jt.controller.FileController] from ClassLoader [sun.misc.Launcher$AppClassLoader@42a57993]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jt.controller.FileController] from ClassLoader [sun.misc.Launcher$AppClassLoader@42a57993]
+Caused by: java.lang.NoClassDefFoundError: com/jt/pojo/vo/ImageVo
+Caused by: java.lang.ClassNotFoundException: com.jt.pojo.vo.ImageVo
+
